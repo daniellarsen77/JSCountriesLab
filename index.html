@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Country Selector</h1>
+    <div class="form-group">
+      <label for="country-select">Select a country:</label>
+      <select id="country-select">
+        <option value="">-- Select a country --</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit" onclick="selectCountry()" />
+    </div>
+    <div class="country-info">
+      <h2 id="country-name"></h2>
+      <p>Official language: <span id="official-language"></span></p>
+      <p>Hello World!: <span id="hello-world"></span></p>
+    </div>
+  </div>
+  <script src="countries.js"></script>
+</body>
+</html>
